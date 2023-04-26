@@ -1,0 +1,51 @@
+@import './variables.scss';
+
+.learn-more {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 130px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  
+    .text {
+      flex-basis: 50%;
+  
+      h2 {
+        margin-bottom: 1rem;
+        font-size: 2rem;
+        font-weight: 600;
+        color: $firstColor;
+        letter-spacing: 1px;
+      }
+  
+      p {
+        font-size: 1.2rem;
+        line-height: 1.5;
+        color: $secondColor;
+      }
+    }
+  
+    .map {
+      flex-basis: 45%;
+      margin-left: 5%;
+    }
+  
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 0;
+  
+      .text,
+      .map {
+        flex-basis: 100%;
+        margin: 10px 20px;
+      }
+      
+      iframe {
+        height: 200px;
+        width: 300px;
+      }
+    }
+  }

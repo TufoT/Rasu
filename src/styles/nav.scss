@@ -1,0 +1,50 @@
+@import './variables.scss';
+
+@mixin flexBetween {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+}
+
+.nav {
+    @include flexBetween();
+    background-color: $firstColor;
+    padding: 20px;
+    h1 {
+        font-size: 2rem;
+        color: $textColor;
+        padding: 10px;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+}
+
+.links {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    color: $textColor;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-right: 45px;
+    transition: all ease-in-out .5s;
+    &:hover {
+        border-bottom: 3px solid $firstColor;
+        color: white;
+        transform: translateY(-5px);
+        box-shadow: $boxShadow2;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .links {
+        display: none;
+    }
+}

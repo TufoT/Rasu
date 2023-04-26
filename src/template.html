@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+    <div class="nav">
+        <h1 class="logo">Rasu</h1>
+        <div>
+            <a href="#home" class="links"><span>Home</span></a>
+            <a href="#menu" class="links"><span>Menu</span></a>
+            <a href="#learn" class="links"><span>Learn More</span></a>
+        </div>
+    </div>
+    <div class="hero">
+        <div class="hero-text section" id="home">
+            <h1 class="h1-txt">Where flavor meets family !</h1>
+            <p class="p-txt">Rasu is a Peruvian restaurant that offers a fusion of modern and traditional elements,<br> 
+                creating innovative and authentic dishes using locally sourced, high-quality ingredients.<br>
+                From ceviche to alfajores, every dish celebrates the rich heritage of Peru, and the warm<br>
+                hospitality and inviting atmosphere make for a truly memorable dining experience.<br></p>
+            <a href="#learn" class="btn">Learn More</a>
+        </div>
+        <div class="img">
+            <img src="./images/hero-png.jpg" class="hero-img">
+        </div>
+    </div>
+    <div class="menu">
+        <h2 id="menu" class="section">Menu</h2>
+        <div class="items">
+          <div class="item">
+            <img src="./images/ceviche.jpg">
+            <h3>Ceviche</h3>
+            <p>Ceviche is a dish of marinated raw fish, often served with onions, corn, and sweet potatoes.</p>
+          </div>
+          <div class="item">
+            <img src="./images/lomo-saltado.jpg">
+            <h3>Lomo Saltado</h3>
+            <p>Lomo Saltado is a stir-fry of beef, onions, tomatoes, and french fries, often served with rice.</p>
+          </div>
+          <div class="item">
+            <img src="./images/pollo.jpg" alt="">
+            <h3>Pollo a la Brasa</h3>
+            <p>Pollo a la Brasa is a roasted chicken marinated in spices and served with french fries and aji sauce.</p>
+          </div>
+          <div class="item">
+            <img src="./images/papa.jpg" alt="">
+            <h3>Papa a la Huancaína</h3>
+            <p>Papa a la Huancaína - boiled potatoes served with a creamy sauce made from cheese, milk, and aji amarillo peppers.</p>
+          </div>
+          <div class="item">
+            <img src="./images/peruvian.jpg" alt="">
+            <h3>Anticuchos</h3>
+            <p>Anticuchos is skewered and grilled beef hearts, often served with potatoes and aji sauce.</p>
+          </div>
+          <div class="item">
+            <img src="./images/causa.jpeg" alt="">
+            <h3>Causa Rellena</h3>
+            <p>Causa Rellena is a layered dish of mashed potatoes, filled with tuna, chicken, or vegetables, and topped with avocado and aji amarillo sauce.</p>
+          </div>
+        </div> 
+    </div> 
+    <div class="learn-more">
+      <div class="text">
+        <h2 id="learn" class="section">Rasu</h2>
+        <p>Rasu is a vibrant and welcoming Peruvian restaurant, 
+          serving up delicious and authentic dishes that showcase the flavors of Peru. 
+          From traditional ceviche to the popular Lomo Saltado, Rasu offers a range of 
+          options to satisfy any craving. The warm and inviting atmosphere makes it the 
+          perfect place to enjoy a meal with friends and family. With its friendly staff 
+          and excellent service, Rasu promises to provide a memorable dining experience 
+          that will transport you to the heart of Peru.</p>
+      </div>
+      <div class="map">
+        <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1165.0824979692675!2d-77.7440616429204!3d-10.822423051079735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c850c05914f5%3A0xf29e011279210648!2sPeru!5e0!3m2!1sen!2smk!4v1682528183121!5m2!1sen!2smk" 
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+      </div>
+    </div>
+    
+    <script src="./app.js"></script>
+</body>
+</html>
